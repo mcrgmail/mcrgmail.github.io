@@ -36,7 +36,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {-moz-anima
 body {background-color: #fff; color: #565656;}
 body, input, select, textarea {font-family: Roboto, Raleway, Helvetica, sans-serif; font-size: 18pt; font-weight: 300; line-height: 1.5;}
 @media screen and (max-width: 736px) {body, input, select, textarea {font-size: 16pt;}}
-@media screen and (max-width: 360px) {body, input, select, textarea {font-size: 16pt;}}
+@media screen and (max-width: 360px) {body, input, select, textarea {font-size: 14pt;}}
 
 /*
 @media screen and (max-width: 1680px) {body, input, select, textarea {font-size: 18pt;}}
@@ -133,7 +133,7 @@ ul li {padding-left: 0.5em;}
   .lyt_logo p { font-size: 1.2em; }
 }
 @media screen and (max-width: 736px) {
-  .lyt_logo {width: 90%;}
+  .lyt_logo {width: 100%;}
   .lyt_logo p { font-size: 1em; }
 }
 /* @media screen and (max-width: 480px) { .lyt_logo p{width: 80%; font-size: 0.8em;}  } */
