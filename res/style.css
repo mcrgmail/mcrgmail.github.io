@@ -35,7 +35,8 @@ body {background: #fff;}
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {-moz-animation: none !important;-webkit-animation: none !important;-ms-animation: none !important;animation: none !important;-moz-transition: none !important;-webkit-transition: none !important;-ms-transition: none !important;transition: none !important;}
 body {background-color: #fff; color: #565656;}
 body, input, select, textarea {font-family: Roboto, Raleway, Helvetica, sans-serif; font-size: 18pt; font-weight: 300; line-height: 1.5;}
-@media screen and (max-width: 980px) {body, input, select, textarea {font-size: 16pt;}}
+@media screen and (max-width: 736px) {body, input, select, textarea {font-size: 16pt;}}
+@media screen and (max-width: 360px) {body, input, select, textarea {font-size: 16pt;}}
 
 /*
 @media screen and (max-width: 1680px) {body, input, select, textarea {font-size: 18pt;}}
@@ -94,6 +95,7 @@ ul li {padding-left: 0.5em;}
   align-items: left; text-align: left;
 }
 @media screen and (max-width: 1280px){ .lyt_section {max-width: 80%;} }
+
 
 .bg_light{background-color: #f7f7f7;}
 .bg_dark{background-color:#323232;}
@@ -211,7 +213,7 @@ ul li {padding-left: 0.5em;}
 .modal-footer{border-top: 0px solid #e9ecef;}
 
 .modal-right{width: 70%; }
-@media screen and (max-width: 480px) { .modal-right{width: 100%; }}
+@media screen and (max-width: 980px) { .modal-right{width: 100%; }}
 
 
 
