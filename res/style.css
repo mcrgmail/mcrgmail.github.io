@@ -35,11 +35,14 @@ body {background: #fff;}
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {-moz-animation: none !important;-webkit-animation: none !important;-ms-animation: none !important;animation: none !important;-moz-transition: none !important;-webkit-transition: none !important;-ms-transition: none !important;transition: none !important;}
 body {background-color: #fff; color: #565656;}
 body, input, select, textarea {font-family: Roboto, Raleway, Helvetica, sans-serif; font-size: 18pt; font-weight: 300; line-height: 1.5;}
+@media screen and (max-width: 980px) {body, input, select, textarea {font-size: 16pt;}}
 
+/*
 @media screen and (max-width: 1680px) {body, input, select, textarea {font-size: 18pt;}}
 @media screen and (max-width: 1280px) {body, input, select, textarea {font-size: 17pt;}}
-@media screen and (max-width: 980px) {body, input, select, textarea {font-size: 16pt;}}
+
 @media screen and (max-width: 480px) {body, input, select, textarea {font-size: 15pt;}}
+*/
 
 input, select, textarea {color: inherit;}
 
@@ -67,6 +70,7 @@ h3 {
 
 h4 {font-size: 1em; font-weight: bold;}
 
+/*
 @media screen and (max-width: 736px) {
   h1 {font-size: 1.5em;margin: 0 0 0rem 0;}
   h2 {font-size: 1.2em;}
@@ -74,6 +78,7 @@ h4 {font-size: 1em; font-weight: bold;}
   h4 {font-size: 1.1em;}
 
 }
+*/
 
 ul {list-style: disc;margin: 0 0 0.5em 0;padding-left: 1em;}
 ul li {padding-left: 0.5em;}
@@ -115,18 +120,19 @@ ul li {padding-left: 0.5em;}
 
 /* layout logo */
 
-.lyt_logo {margin: 2em 0 0.5em; width: 50%}
+.lyt_logo {width: 50%; margin: 2em 0 0.5em; }
 .lyt_logo p {
   width: 80%; height:25px; margin: 0 auto; text-align: center;
   color: #565656 !important;
   font-family: 'Comfortaa'; font-size: 1.5em; letter-spacing: 10px;
 }
 @media screen and (max-width: 1280px) {
-  .lyt_logo {width: 80%; font-size: 1em;}
+  .lyt_logo {width: 70%;}
+  .lyt_logo p { font-size: 1.2em; }
 }
 @media screen and (max-width: 736px) {
-  .lyt_logo {width: 100%; font-size: 0.8em;}
-  .lyt_logo p { font-size: 1.2em; }
+  .lyt_logo {width: 90%;}
+  .lyt_logo p { font-size: 1em; }
 }
 /* @media screen and (max-width: 480px) { .lyt_logo p{width: 80%; font-size: 0.8em;}  } */
 
@@ -160,8 +166,8 @@ ul li {padding-left: 0.5em;}
 
 .three_columns{width: 30%;}
 .three_columns_double{width: 62%;}
-@media screen and (max-width: 736px) { .three_columns{height: 0px; width: 0px;} }
-@media screen and (max-width: 736px) { .three_columns_double{width: 100%; padding-left: 0em;} }
+@media screen and (max-width: 980px) { .three_columns{height: 0px; width: 0px;} }
+@media screen and (max-width: 980px) { .three_columns_double{width: 100%; padding-left: 0em;} }
 
 
 
@@ -517,10 +523,10 @@ form {width: 80%;}
   counter-increment: my-awesome-counter;
   padding: 0 0 0 10px; margin: 0 0 1em 50px;
   width: 45%;
-border-left: 0.1em solid #5F94C8;
+  border-left: 0.1em solid #5F94C8;
 }
 
-@media screen and (max-width: 980px) { .numbered li{width: 90%;} }
+@media screen and (max-width: 980px) { .numbered li{ width: 90%;} }
 
 .numbered li:before{
   position: absolute;
