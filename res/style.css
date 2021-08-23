@@ -136,6 +136,10 @@ ul li {padding-left: 0.5em;}
   .lyt_logo {width: 100%;}
   .lyt_logo p { font-size: 1em; }
 }
+
+@media screen and (max-width: 480px) {
+  .lyt_logo p { font-size: 0.8em; letter-spacing: 5px;}
+}
 /* @media screen and (max-width: 480px) { .lyt_logo p{width: 80%; font-size: 0.8em;}  } */
 
 
