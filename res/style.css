@@ -228,6 +228,12 @@ ul li {padding-left: 0.5em;}
 
 /* nav */
 
+.navbar-img-size{
+height: 30px;
+}
+
+@media screen and (max-width: 480px) { .navbar-img-size{height: 20px;}}
+
 .nav-scroll{
   background: #fff !important;
   color: #000 !important;
