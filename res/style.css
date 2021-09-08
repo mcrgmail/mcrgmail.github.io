@@ -66,13 +66,12 @@ h4 { font-size: 1em; }
 }
 
 @media screen and (max-width: 736px) {
-  h1 {font-size: 2em;}
+  h1 {font-size: 1.8em;}
   h2 {font-size: 1.5em;}
   h3 {font-size: 1.2em;}
   h4 {font-size: 1em;}
-  .title{font-size: 2.2em;}
+  .title{font-size: 2em;}
 }
-
 
 ol, ul {list-style: none;}
 ul { list-style: disc; margin: 0 0 0.5em 0; padding-left: 1.2em;}
@@ -84,7 +83,7 @@ ul li {padding: 0em;}
 .lyt_top { padding-top: 2em; }
 
 .lyt_section{
-  height: 100%, width: 55em; max-width: 60%; 
+  height: 100%, width: 50em; max-width: 65%; 
   padding: 3em 0; margin: auto; 
   align-items: left; text-align: left;
 }
@@ -491,7 +490,7 @@ form {width: 80%;}
 /* ------------------- */
 
 .pros {
-  width: 32%;
+  width: 31%;
   padding: 1.5em 1.5em; margin: 0 0.5em 1em 0;
   font-size: 1.2em;  
   border-radius: 20px;
@@ -502,8 +501,16 @@ form {width: 80%;}
   cursor: pointer;
 }
 
-@media screen and (max-width: 1200px){ .pros {width: 47%;} }
-@media screen and (max-width: 736px){ .pros {width: 100%;} }
+@media screen and (max-width: 1536px){
+  .pros { width: 47%; }
+}
+@media screen and (max-width: 736px){
+  .pros {
+    width: 100%;
+    padding: 1em 1em; margin: 0 0 0.5em 0;
+    font-size: 1em;
+  }
+}
 
 .pros_inner{
   display: none;
