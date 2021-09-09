@@ -27,11 +27,11 @@ table, tbody,tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; font: i
 *, *:before, *:after {box-sizing: inherit;}
 
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {-moz-animation: none !important;-webkit-animation: none !important;-ms-animation: none !important;animation: none !important;-moz-transition: none !important;-webkit-transition: none !important;-ms-transition: none !important;transition: none !important;}
-body {background-color: #fff; color: #565656;}
+body {background-color: #fff; color: #404040;}
 body, input, select, textarea {font-family: Roboto, Raleway, Helvetica, sans-serif; font-size: 17pt; font-weight: 300; line-height: 1.4;}
 @media screen and (max-width: 1280px) {body, input, select, textarea {font-size: 16pt;}}
-@media screen and (max-width: 736px) {body, input, select, textarea {font-size: 14pt;}}
-/* @media screen and (max-width: 360px) {body, input, select, textarea {font-size: 14pt;}} */
+@media screen and (max-width: 736px) {body, input, select, textarea {font-size: 13pt;}}
+/* @media screen and (max-width: 360px) {body, input, select, textarea {font-size: 13pt;}} */
 
 
 a { -moz-transition: border-bottom-color 0.2s ease; -webkit-transition: border-bottom-color 0.2s ease; -ms-transition: border-bottom-color 0.2s ease; transition: border-bottom-color 0.2s ease; color: inherit; text-decoration: none; border-bottom: solid 1px;}
@@ -66,11 +66,11 @@ h4 { font-size: 1em; }
 }
 
 @media screen and (max-width: 736px) {
-  h1 {font-size: 1.7em;}
-  h2 {font-size: 1.5em;}
-  h3 {font-size: 1.2em;}
+  h1 {font-size: 1.4em;}
+  h2 {font-size: 1.2em;}
+  h3 {font-size: 1.1em;}
   h4 {font-size: 1em;}
-  .title{font-size: 1.7em;}
+  .title{font-size: 1.4em;}
 }
 
 ol, ul {list-style: none;}
@@ -139,7 +139,7 @@ ul li {padding: 0em;}
 .lyt_logo {width: 100%; margin: 3em 0 .5em; }
 .lyt_logo p {
   width: 80%; height:25px; margin: 0 auto; text-align: center;
-  color: #565656 !important;
+  color: #404040 !important;
   font-family: 'Comfortaa'; font-size: 1.5em; letter-spacing: 10px;
 }
 @media screen and (max-width: 1280px) {
@@ -293,7 +293,6 @@ height: 30px;
   }
 }
 
-
 .lang{
   font-family: Helvetica;
   margin: 0.2em 0 0 2em;
@@ -322,13 +321,21 @@ height: 30px;
 }
 
 .lyt_footer_left { text-align:left; min-width: 365px;}
-.lyt_footer_left div{ height: 100px; min-width: 30px; float:left; padding: 0 0.5em 0 0; }
+
 .lyt_footer_right { text-align:right; margin: auto 0 0;}
+
+.lyt_footer_logo{ width: 90px; float:left; padding: 0 0.5em 0 0; }
 
 @media screen and (max-width:1080px) {
   .lyt_footer_right{ width: 100%; min-height: 1px; margin-top: 20px;}
-  .lyt_footer_left div{ height: 80px; }
+  .lyt_footer_left { width: 100%; }
 }
+
+@media screen and (max-width:736px) {
+  .lyt_footer_logo{width: 0px;}
+  
+}
+
 
 .lyt_footer p {
   margin-bottom: 0em;
@@ -485,24 +492,23 @@ form {width: 80%;}
 }
 
 .flow_wrap:hover{
-  color: #565656;
-  border-bottom: 2px solid #565656;
+  color: #404040;
+  border-bottom: 2px solid #404040;
 }
 
 .flow_wrap:hover .flow_arrow_small {
-  border-bottom: 2px solid #565656;
-  border-right: 2px solid #565656;
+  border-bottom: 2px solid #404040;
+  border-right: 2px solid #404040;
 }
 
 .flow_arrow_full:hover{
-  border-bottom: 4px solid #565656;
-  border-right: 4px solid #565656;
+  border-bottom: 4px solid #404040;
+  border-right: 4px solid #404040;
 }
 
 .flow_text{
   text-align: left;  
 }
-
 
 
 
