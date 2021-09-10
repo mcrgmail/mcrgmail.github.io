@@ -339,14 +339,13 @@ height: 30px;
   font-family: Helvetica;
   margin: 0.2em 0 0 2em;
   font-size: 0.7em;
-  color: rgba(0,0,0,.2);
 }
 @media (max-width: 992px){
   .lang{ margin: 1em 10px 0 0; font-size: 1.4rem !important;}
 }
 
-.lang a{ font-size: 1em !important; }
-.lang span{ color: rgba(0,0,0,.5); }
+.lang a{ font-size: 1em !important; color: rgba(0,0,0,.3) !important;}
+
 
 /* footer */
 
