@@ -85,6 +85,7 @@ ul li {padding: 0em;}
   padding: 3em 0; margin: auto; 
   align-items: left; text-align: left;
 }
+@media screen and (max-width: 1400px){ .lyt_section {max-width: 75%;} }
 @media screen and (max-width: 1280px){ .lyt_section {max-width: 80%;} }
 @media screen and (max-width: 736px){ .lyt_section {max-width: 90%;} }
 
@@ -577,7 +578,7 @@ form {width: 80%;}
   cursor: pointer;
 }
 
-@media screen and (max-width: 1536px){
+@media screen and (max-width: 1280px){
   .pros { width: 47%; }
 }
 @media screen and (max-width: 736px){
