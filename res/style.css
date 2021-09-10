@@ -273,8 +273,17 @@ height: 30px;
 
 }
 
+.navbar a:hover {
+  text-decoration-line: underline !important;
+  text-decoration-style: dotted !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 4px !important;
+}
+
 .inuse{
-  text-decoration-line: underline !important; text-underline-offset: 4px !important;
+  text-decoration-line: underline !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 4px !important;
 }
 
 .navbar-brand{
@@ -282,36 +291,38 @@ height: 30px;
   margin: 0 1rem !important;
 }
 
- .nav-item{
-    text-align: right;
+.nav-item{
+  text-align: right;
+}
+
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5em !important;
+    padding-left: .5em !important;
+  }
 }
 
 @media (max-width: 992px){
   .pt-md-0, .py-md-0 {
-      padding-top: 0.3em !important;
-      padding-bottom: 0.3em !important;
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
   }
+
+  .navbar a {
+    font-size: 1.8rem !important;
+  }    
 }
 
-.lang{
+.lang {
   font-family: Helvetica;
   margin: 0.2em 0 0 2em;
   font-size: 0.7em;
   color: rgba(0,0,0,.2);
-  
-  /* font-style: italic; */
 }
 @media (max-width: 992px){.lang{margin: 1em 0 0 0;}}
 
-.lang a{
-  font-size: 1em !important;
-}
-
-.lang span{
-  color: rgba(0,0,0,.5);
-}
-
-
+.lang a{ font-size: 1em !important; }
+.lang span{ color: rgba(0,0,0,.5); }
 
 /* footer */
 
