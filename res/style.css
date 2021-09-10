@@ -103,15 +103,15 @@ ul li {padding: 0em;}
     min-height: 92vh;
 }
 
-.lyt_section_landing a {
+.bg_light{background-color: #f7f7f7;}
+.bg_dark{background-color:#292929;}
+
+
+.a_blue {
   margin: 0 0 0 20px;
   white-space: nowrap;
   color: #5F94C8; font-weight: 500;
 }
-
-.bg_light{background-color: #f7f7f7;}
-.bg_dark{background-color:#292929;}
-
 
 /* layout flex */
 
@@ -642,6 +642,11 @@ form {width: 80%;}
 
 .pros span{
   font-size: 1.3em; font-weight: 800; /* color: #ddd; */
+}
+
+@media screen and (max-width: 736px){
+  .pros span { font-size: 1.1em; }
+  .pros_inner{ margin-top: 5px; }
 }
 
 .pros a{
