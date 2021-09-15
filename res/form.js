@@ -3,13 +3,18 @@ $(function() {
         e.preventDefault();  //prevent form from submitting
 
         /* Validate */
-        
         $(".input-name").attr('style', 'display: none;');
         $(".input-email").attr('style', 'display: none;');
-
+        $(".input-cbox").attr('style', 'display: none;');
 
         var check = true;
-        let name = document.forms["contactForm"]["name"].value;
+        var name = document.forms["contactForm"]["name"].value;
+        var cbox = document.forms["contactForm"]["cbox"].checked;
+
+        if( cbox == false){
+            $(".input-cbox").attr('style', 'display: inline;');
+            check=false;
+        }
 
         if( name.trim() == ''){
             $(".input-name").attr('style', 'display: inline;');
@@ -26,15 +31,16 @@ $(function() {
 
         /* Validate */
 
-
-        if ($('#messagebox:visible').length == 0) { var type = 'Newsletter'; }
+        if ($('#message:visible').length == 0) { var type = 'Newsletter'; }
         else { var type = 'Contact'; }
 
+        var post_data =  $("#contactForm").serialize() + '&type=' + type
+
         $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbz3gs3fC7JNGZWbjkzYq58BNd1S7Mg8Uc7G-29MGWAN9Uj7qkE/exec",
+            url: "https://script.google.com/macros/s/AKfycbwmxKOxPAHC1j4JPyPHBjAeN831YceA26sIzpThNLt3aOPeKj_EHz9Hh_EKqSjaQya38g/exec",
             method: "POST",
-            dataType: "json",
-            data: $("#contactForm").serialize() + '&type=' + type,
+            dataType: "json",     
+            data: post_data,
             success: function(response) {
 
                 if(response.result == "success") {
