@@ -9,8 +9,8 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {height: 100%;}
-body {min-height: 100%; display: flex; -moz-flex-direction: column; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;}
+html, body {height: 100%; overflow-x:hidden; }
+body {display: flex; -moz-flex-direction: column; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;}
 
 html, body, div, span, applet, object,iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, img, strong, sub, sup, tt, var, b, u, i, ol, ul, li, fieldset,form, label, legend, article, footer, header, menu, nav, output, section, summary {margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
@@ -126,8 +126,7 @@ ul li {padding: 0em;}
 .flex-bottom { align-items: center; justify-content: flex-end; }
 .flex-center { align-items: center; justify-content: center; }
 .flex-spacing { align-items: center; justify-content: space-between; }
-.flex-top{  align-items:flex-start; justify-content: center; }
-
+.flex-top { align-items:flex-start; justify-content: center; }
 
 /* layout logo */
 
@@ -150,6 +149,14 @@ ul li {padding: 0em;}
   .lyt_logo p { font-size: 0.8em; letter-spacing: 5px;}
 }
 /* @media screen and (max-width: 480px) { .lyt_logo p{width: 80%; font-size: 0.8em;}  } */
+
+.background_logo{
+
+  background-image: url(l_b.png);
+  background-size: auto 200%;
+  background-position: -100% 15% ;
+  background-repeat: no-repeat;
+}
 
 
 .background_left{
@@ -594,15 +601,19 @@ form {width: 80%;}
 
 
 
-
 .flow_right{
   margin: 0 0 0 auto;
 }
 
 .flow_right a {
   margin: 0 0 0 20px;
-  white-space: nowrap;
   color: #5F94C8; font-weight: 500;
+  white-space: nowrap;
+  display: inline;
+    -webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 
@@ -870,8 +881,11 @@ form {width: 80%;}
   .diag_arrow { border-width: 60px 0 60px 20px; }
 }
 @media screen and (max-width: 736px){
-  .diag_top { margin: 10px 0 175px; }
-  .diag_bot { width: 240px;  }
-  .diag_item { line-height: 70px; height: 70px; width: 70px; }
+  .diag_top { margin: 10px 0 200px; }
+  .diag_bot { width: 260px;  }
+  .diag_item {
+    font-size: 0.8em;
+    line-height: 80px; height: 80px; width: 80px;
+  }
   .diag_arrow { border-width: 45px 0 45px 15px; }
 }
