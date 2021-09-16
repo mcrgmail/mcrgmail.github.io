@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {height: 100%; overflow-x:hidden; }
+html, body {height: 100%; overflow-x: hidden;}
 body {display: flex; -moz-flex-direction: column; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;}
 
 html, body, div, span, applet, object,iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, img, strong, sub, sup, tt, var, b, u, i, ol, ul, li, fieldset,form, label, legend, article, footer, header, menu, nav, output, section, summary {margin: 0; padding: 0; border: 0; font: inherit; vertical-align: baseline;}
@@ -780,14 +780,14 @@ form {width: 80%;}
 .numbered li {
   position: relative;
   counter-increment: my-awesome-counter;
-  padding: 0 0 0 10px; margin: 0 0px 2em 45px;
+  padding: 0 0 0 10px; margin: 0 0px 2em 50px;
 
   width: 40%;
   border-left: 0.1em solid #5F94C8;
 }
 
 @media screen and (max-width: 1200px) { .numbered li{ width: 90%;} }
-@media screen and (max-width: 736px) { .numbered li{ margin: 0 0 1em 50px;} }
+@media screen and (max-width: 736px) { .numbered li{ margin: 0 0 1em 36px;} }
 
 .numbered li:before{
   position: absolute;
@@ -877,7 +877,10 @@ form {width: 80%;}
 @media screen and (max-width: 1280px){
   .diag_top { margin: 10px 0 260px; }
   .diag_bot { width: 300px;  }
-  .diag_item { line-height: 100px; height: 100px; width: 100px; }
+  .diag_item {
+    font-size: 0.9em;
+    line-height: 100px; height: 100px; width: 100px;
+  }
   .diag_arrow { border-width: 60px 0 60px 20px; }
 }
 @media screen and (max-width: 736px){
